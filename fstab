@@ -1,0 +1,17 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda3 during installation
+UUID=5fcff76f-602b-4c6a-ade2-84c9dd2e6718 /               ext4    errors=remount-ro 0       1
+/swapfile                                 none            swap    sw              0       0
+
+UUID=23EE55491774E4CC /mnt/antigo ntfs uid=1000,gid=1000,umask=0000,sync,auto,rw,noatime 0 0
+#UUID=23EE55491774E4CC        /mnt/antigo     ntfs-3g   defaults,nls=utf8,umask=000,dmask=000,fmask=000,uid=1000,gid=1000,windows_names,rw 0 0
+
+//192.168.100.70/Gds\040Sistemas/GDSCaixa/gdscartao-com-br/Web /mnt/gds cifs username=jordan,password=JdZ@3721,iocharset=utf8,file_mode=0777,dir_mode=0777,rw,cache=none,nounix,noperm 0 0
+
+//192.168.100.70/Comum /mnt/comum cifs username=jordan,password=Jdz@3721,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm 0 0
